@@ -1,7 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+// Routes
+import { APP_ROUTES } from './app.routes';
+
+// Module
+import { PagesModule } from './pages/pages.module';
+
+// Component
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,9 +16,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
