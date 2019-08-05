@@ -1,7 +1,49 @@
-<app-header></app-header>
+<div class="container-fluid my-auto">
+    <div class="row">
 
-<main role="main" class="container">
+        <app-sidebar></app-sidebar>
 
-    <router-outlet></router-outlet>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-5">
 
-</main>
+            <app-header></app-header>
+
+            <router-outlet></router-outlet>
+
+        </main>
+
+    </div>
+
+    <div class="zoom">
+        <a class="zoom-fab zoom-btn-large bg-lean zoom-first" id="zoomBtn">
+            <i class="fas fa-plus"></i>
+        </a>
+        <ul class="zoom-menu">
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                    <i class="fas fa-camera"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                    <i class="fas fa-clipboard"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                    <i class="fas fa-eye"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                    <i class="fas fa-folder-open"></i>
+                </a>
+            </li>
+            <li>
+                <a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out">
+                    <i class="fas fa-car"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
